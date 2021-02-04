@@ -1,2 +1,2 @@
-# sea-battle-online
-#Sea battle game mulltiplayer
+# Sea-battle
+**game for multiplayer**
