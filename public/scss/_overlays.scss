@@ -1,0 +1,42 @@
+#root video {
+  position: absolute;
+  transform: rotateX(180deg);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay {
+  mix-blend-mode: overlay;
+  background: #3b494f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+
+.some {
+  position: relative;
+  $color: #3376b9; 
+  color: $color;
+  border-color: $color + #da1e1e;
+  &:hover { color: #010203 * 115; }
+}
+
+.overlay__img {
+  background-image: url('../assets/img/menu.jpg');
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
