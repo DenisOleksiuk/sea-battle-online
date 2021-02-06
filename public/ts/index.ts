@@ -1,17 +1,13 @@
 import '../scss/style.scss';
 import { io } from 'socket.io-client';
+import Overlay from './components/Overlay';
+import createArea from './components/areaBattle';
+
+createArea();
 
 // eslint-disable-next-line no-undef
 const socket = io();
 
-function component(): Node {
-  const element = document.createElement('div');
-  element.classList.add('some');
-  element.innerHTML = ['Hello', 'Webpack'].join();
-
-  return element;
-}
-
-document.body.appendChild(component());
+Overlay.render();
 
 export default socket;

@@ -1,3 +1,6 @@
+@import './heared';
+@import './areas';
+
 * {
   margin: 0;
   padding: 0;
@@ -9,21 +12,15 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Lemonada', cursive;
+}
+
 [hidden] {
   display: none !important;
 }
 
-.header {
-  position: relative;
-  z-index: 1;
-  color: white;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-video {
+#root video {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -50,4 +47,17 @@ video {
   color: $color;
   border-color: $color + #da1e1e;
   &:hover { color: #010203 * 115; }
+}
+
+.overlay__img {
+  background-image: url('../assets/img/menu.jpg');
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
