@@ -1,8 +1,7 @@
 /* eslint-disable no-continue */
-function createArea(): void {
-  const root = document.querySelector('#root');
+function createArea(): HTMLDivElement {
   const battlshipArea = document.createElement('div');
-  battlshipArea.classList.add('battleship__grid-one');
+  battlshipArea.classList.add('battleship__grid');
 
   const ASCCI = 97;
   let id: number = 0;
@@ -36,7 +35,7 @@ function createArea(): void {
 
     id += 1;
   }
-  root?.append(battlshipArea);
+  return battlshipArea;
 }
 
 export default createArea;
